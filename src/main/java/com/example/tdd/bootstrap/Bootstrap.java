@@ -22,6 +22,8 @@ public class Bootstrap implements ApplicationListener<ContextRefreshedEvent> {
 
     public void initData() {
         Car car = new Car("prius", "hybrid");
+        Car car2 = new Car("camry", "hybrid");
+        Car car3 = new Car("chr", "hybrid");
         carRepository.save(car);
     }
 }
